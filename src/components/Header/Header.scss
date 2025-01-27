@@ -1,0 +1,21 @@
+@use "../../styles/partials/mixins" as *;
+
+.header {
+  &__container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet {
+      width: 65%;
+    }
+
+    margin: 0 auto;
+  }
+
+  &__logo {
+    width: 5rem;
+    height: 5rem;
+  }
+}

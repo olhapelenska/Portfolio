@@ -1,0 +1,24 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.nav {
+  &__links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__link {
+    color: $white;
+    transition: all 0.2s;
+
+    @include hover {
+      &:hover {
+        color: $softLavander;
+      }
+    }
+
+    &--active {
+      color: $vividPurple;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 120 120"
+  width="200"
+  height="200"
+>
+  <!-- Outer Glow Circle -->
+  <circle cx="60" cy="60" r="55" fill="url(#outer-glow)" />
+
+  <!-- Main Circle -->
+  <circle cx="60" cy="60" r="50" fill="url(#gradient)" stroke="#A29BFE" stroke-width="2" />
+
+  <!-- Gradient Definition -->
+  <defs>
+    <radialGradient id="outer-glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#1A1A2E" />
+      <stop offset="100%" stop-color="#6A67CE" stop-opacity="0.5" />
+    </radialGradient>
+
+    <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A1A2E" />
+      <stop offset="100%" stop-color="#6A67CE" />
+    </linearGradient>
+  </defs>
+
+  <!-- Decorative Inner Ring -->
+  <circle cx="60" cy="60" r="40" fill="none" stroke="#A29BFE" stroke-width="2" stroke-dasharray="4 4" />
+
+  <!-- Initials "OP" -->
+  <text
+    x="60"
+    y="65"
+    font-size="32"
+    font-family="Arial, sans-serif"
+    fill="#FFFFFF"
+    font-weight="bold"
+    text-anchor="middle"
+    alignment-baseline="middle"
+    dominant-baseline="middle"
+  >
+    OP
+  </text>
+</svg>
