@@ -1,23 +1,15 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
-.header {
-  border-bottom: 0.3px solid $vividPurple;
-
+.footer {
   &__container {
     width: 90%;
     margin: 1rem auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 
     @include tablet {
       width: 65%;
     }
-  }
-
-  &__logo {
-    width: 5rem;
-    height: 5rem;
   }
 }
