@@ -7,9 +7,10 @@
     margin: 1rem auto;
     display: flex;
     justify-content: center;
+    padding-bottom: 2.25rem;
 
     @include tablet {
-      width: 65%;
+      width: 75%;
     }
   }
 }

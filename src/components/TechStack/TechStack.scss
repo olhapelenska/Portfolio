@@ -1,2 +1,8 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
+
+.tech-stack {
+  &__title {
+    margin-bottom: 2rem;
+  }
+}
