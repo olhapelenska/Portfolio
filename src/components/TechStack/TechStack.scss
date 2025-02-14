@@ -5,4 +5,23 @@
   &__title {
     margin-bottom: 2rem;
   }
+
+  &__list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 0.3px solid $vividPurple;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }

@@ -1,2 +1,55 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
+
+.experience {
+  margin: 5.5rem 0;
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    flex-basis: 47%;
+
+    &:first-child {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__role {
+    margin-bottom: 1rem;
+    color: $softLavander;
+  }
+
+  &__company {
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 1rem;
+    color: $lightLavander;
+    margin-bottom: 1rem;
+  }
+
+  &__bullet {
+    padding-left: 1rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+    color: $lightLavander;
+
+    &::before {
+      content: "•";
+      color: $vividPurple;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+  }
+}
