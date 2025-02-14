@@ -7,13 +7,21 @@
   }
 
   &__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1.5rem;
+    }
+
+    @include desktop {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 
   &__item {
-    flex-basis: 32%;
     display: flex;
     flex-direction: column;
   }
@@ -53,7 +61,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-bottom: 2.5rem;
 
     img {
       width: 20px;

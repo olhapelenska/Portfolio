@@ -9,12 +9,18 @@
   }
 
   &__list {
-    display: flex;
-    justify-content: space-between;
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__item {
-    flex-basis: 48%;
+    flex-basis: 47%;
+
+    &:first-child {
+      margin-bottom: 2rem;
+    }
   }
 
   &__role {
