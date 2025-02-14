@@ -1,5 +1,6 @@
 import "./About.scss";
 import myPhoto from "../../assets/images/olha-pelenska.jpg";
+import { Link } from "react-scroll";
 
 function About() {
   return (
@@ -15,12 +16,23 @@ function About() {
           real-world problems with clean code and innovative solutions.
         </p>
         <div className="about__buttons">
-          <button className="about__button about__button--projects">
-            View My Projects
-          </button>
-          <button className="about__button about__button--resume">
-            Download My Resume
-          </button>
+          <Link
+            to="projects"
+            smooth={true}
+            duration={500}
+            offset={-96.5}
+            className="about__button about__button--projects"
+          >
+            See My Projects
+          </Link>
+          <a
+            href="/Olha_Pelenska_Software_Engineer.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="about__button about__button--resume"
+          >
+            View My Resume
+          </a>
         </div>
 
         <div className="about__contact">

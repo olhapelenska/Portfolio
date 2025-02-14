@@ -83,9 +83,10 @@ function Projects() {
       <h2 className="projects__title">Projects</h2>
       <div className="projects__list">
         {projects.map((project, index) => (
-          <Link
-            to={project.link}
+          <a
+            href={project.link}
             target="_blank"
+            rel="noopener noreferrer"
             key={index}
             className="projects__item"
           >
@@ -102,7 +103,7 @@ function Projects() {
                 </li>
               ))}
             </ul>
-          </Link>
+          </a>
         ))}
       </div>
     </section>
