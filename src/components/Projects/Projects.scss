@@ -1,2 +1,56 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
+
+.projects {
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex-basis: 32%;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__item-title {
+    margin: 1rem 0;
+  }
+
+  &__item-text {
+    color: $lightLavander;
+    margin-bottom: 1rem;
+  }
+
+  &__item-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+  }
+
+  &__item-technology {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 0.3px solid #6a67ce;
+  }
+}
