@@ -25,7 +25,9 @@ function Projects() {
           target="_blanc"
           className="projects__item projects__instaclone"
         >
-          <img src={InstaClone} alt="instaclone image" />
+          <div className="projects__image">
+            <img src={InstaClone} alt="instaclone image" />
+          </div>
           <h3 className="projects__item-title">InstaClone</h3>
           <p className="projects__item-text">
             Social media-inspired web app for sharing photos, liking posts, and
@@ -59,7 +61,9 @@ function Projects() {
           target="_blanc"
           className="projects__item projects__kika"
         >
-          <img src={kika} alt="kika image" />
+          <div className="projects__image">
+            <img src={kika} alt="kika image" />
+          </div>
           <h3 className="projects__item-title">Kika</h3>
           <p className="projects__item-text">
             Sleek and modern website for a web design studio
@@ -92,7 +96,9 @@ function Projects() {
           target="_blanc"
           className="projects__item projects__ccg"
         >
-          <img src={ccg} alt="ccg image" />
+          <div className="projects__image">
+            <img src={ccg} alt="ccg image" />
+          </div>
           <h3 className="projects__item-title">Crypto Consult Group</h3>
           <p className="projects__item-text">
             Consulting company website, showcasing cryptocurrency insights and
@@ -126,7 +132,9 @@ function Projects() {
           target="_blanc"
           className="projects__item projects__crossway"
         >
-          <img src={crossway} alt="crossway image" />
+          <div className="projects__image">
+            <img src={crossway} alt="crossway image" />
+          </div>
           <h3 className="projects__item-title">Crossway Logistics</h3>
           <p className="projects__item-text">
             Professional website for a logistics company
