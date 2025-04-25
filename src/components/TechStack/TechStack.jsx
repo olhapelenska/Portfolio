@@ -2,6 +2,7 @@ import "./TechStack.scss";
 
 // Import all skill icons
 import jsIcon from "../../assets/images/javascript.svg";
+import tsIcon from "../../assets/images/ts.svg";
 import htmlIcon from "../../assets/images/html.svg";
 import cssIcon from "../../assets/images/css.svg";
 import sassIcon from "../../assets/images/sass.svg";
@@ -24,6 +25,7 @@ import jiraIcon from "../../assets/images/jira.svg";
 // Skills Data Array
 const skills = [
   { name: "JavaScript", icon: jsIcon },
+  { name: "TypeScript", icon: tsIcon },
   { name: "HTML5", icon: htmlIcon },
   { name: "CSS3", icon: cssIcon },
   { name: "Sass", icon: sassIcon },
